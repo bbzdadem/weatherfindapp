@@ -6,7 +6,6 @@
     const URL = "https://api.openweathermap.org/data/2.5/weather";
     const FULL_URL = `${URL}?q=${city}&appid=${API_KEY}&units=imperial`;
 
-    console.log(FULL_URL)
     const weatherPromise = fetch(FULL_URL);
     return weatherPromise.then((response) => {
         return response.json();
